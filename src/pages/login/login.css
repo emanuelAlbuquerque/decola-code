@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+}
+
+.body_login-cadastro {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+
+.color-font {
+  color: white;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.links {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.links:hover {
+  color: var(--azul-claro);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.botao_bg-color {
+  background-color: var(--azul-medio-escuro);
+}
+
+.outline-none {
+  outline: none;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background: transparent;
+}
+
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background: transparent;
+}
+
+
+/*------------------------ESQUECEU SENHA-----------------------------------*/
+
+.fontParagrafo {
+  font-size: 20px;
+}
