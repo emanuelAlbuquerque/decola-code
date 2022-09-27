@@ -1,0 +1,7 @@
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background: transparent;
+}
