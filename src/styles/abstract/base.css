@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+.font-patrick {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.background_body {
+  background-image: url(../../assets/background-login/37414.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.body_login-cadastro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
