@@ -18,3 +18,7 @@
 .dropdown-toggle {
   outline: 0;
 }
+
+.button_pesquisar {
+  background-color: var(--roxo);
+}
