@@ -1,155 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DECOLA CODE - CADASTRO</title>
-    <link
-      rel="shortcut icon"
-      href="../../assets/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.2/examples/sign-in/"
-    />
-    <link
-      href="../../styles/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../../styles/style.css" />
-  </head>
-  <body class="body-cadastro background_body text-center">
-    <header class="p-3 w-100">
-      <div class="container p-0">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-        >
-          <a
-            href="/"
-            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
-          >
-            <img
-              src="../../assets/logo_tela-login.jpg"
-              alt=""
-              width="50"
-              height="50"
-              class="rounded-circle"
-            />
-          </a>
 
-          <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-          >
-            <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Sobre nós</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Cursos</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Login</a></li>
-          </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DECOLA CODE - CADASTRO</title>
+  <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/" />
+  <link href="../../styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles/style.css" />
+</head>
 
-          <div
-            class="d-flex col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 justify-content-center"
-          >
-            <form class="me-1" role="search">
-              <input
-                type="search"
-                class="form-control bg-transparent text-white form-control-white"
-                aria-label="Search"
-                placeholder="Search..."
-              />
-            </form>
+<body class="body-cadastro background_body text-center">
+  <header class="p-3 w-100">
+    <div class="container p-0">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="../../assets/logo_tela-login.jpg" alt="" width="50" height="50" class="rounded-circle" />
+        </a>
 
-            <div class="text-end">
-              <button
-                type="button"
-                class="btn me-2 botao_bg-color border-white text-white"
-              >
-                Pesquisar
-              </button>
-            </div>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Sobre nós</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Cursos</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Login</a></li>
+        </ul>
+
+        <div class="d-flex col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 justify-content-center">
+          <form class="me-1" role="search">
+            <input type="search" class="form-control bg-transparent text-white form-control-white" aria-label="Search"
+              placeholder="Search..." />
+          </form>
+
+          <div class="text-end">
+            <button type="button" class="btn me-2 botao_bg-color border-white text-white">
+              Pesquisar
+            </button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main class="form-signin w-100 m-auto color-font shadow rounded mt-5">
-      <img
-        class="mb-4 rounded-circle"
-        src="../../assets/logo_tela-cadastro.jpg"
-        alt=" Desenho de um atronauta usando um computador"
-        width="70"
-        height="70"
-      />
-      <!-- ------------------------ENTRAR NA CONTA--------------------------------------------------- -->
-      <!-- Tela principal para entrar na conta, colocando seu usuário e sua senha -->
-      <form action="#" id="login-usuario">
-        <h1 class="h3 mb-3 fw-normal">Cadastre-se!!</h1>
+  <main class="form-signin w-100 m-auto color-font shadow rounded mt-5">
+    <img class="mb-4 rounded-circle" src="../../assets/logo_tela-cadastro.jpg"
+      alt=" Desenho de um atronauta usando um computador" width="70" height="70" />
+    <!-- ------------------------ENTRAR NA CONTA--------------------------------------------------- -->
+    <!-- Tela principal para entrar na conta, colocando seu usuário e sua senha -->
+    <form action="#" id="login-usuario">
+      <h1 class="h3 mb-3 fw-normal">Cadastre-se!!</h1>
 
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control shadow-none"
-            id="floatingInput"
-            placeholder="Seu usuário"
-          />
-          <label for="floatingInput">Nome de usuário: </label>
-        </div>
+      <div class="form-floating">
+        <input type="text" class="form-control shadow-none" id="floatingInput" placeholder="Seu usuário" />
+        <label for="floatingInput">Nome de usuário: </label>
+      </div>
 
-        <div class="form-floating">
-          <input
-            type="email"
-            class="form-control shadow-none"
-            id="floatingPassword"
-            placeholder="Password"
-          />
-          <label for="floatingPassword">Seu e-mail: </label>
-        </div>
+      <div class="form-floating">
+        <input type="email" class="form-control shadow-none" id="floatingPassword" placeholder="Password" />
+        <label for="floatingPassword">Seu e-mail: </label>
+      </div>
 
-        <div class="form-floating">
-          <input
-            type="password"
-            class="form-control shadow-none"
-            id="floatingPassword"
-            placeholder="Password"
-          />
-          <label for="floatingPassword">Escolha uma senha: </label>
-        </div>
+      <div class="form-floating">
+        <input type="password" class="form-control shadow-none" id="floatingPassword" placeholder="Password" />
+        <label for="floatingPassword">Escolha uma senha: </label>
+      </div>
 
-        <div class="form-floating">
-          <input
-            type="password"
-            class="form-control shadow-none"
-            id="floatingInput"
-            placeholder="Seu usuário"
-          />
-          <label for="floatingInput">Confirme sua senha: </label>
-        </div>
+      <div class="form-floating">
+        <input type="password" class="form-control shadow-none" id="floatingInput" placeholder="Seu usuário" />
+        <label for="floatingInput">Confirme sua senha: </label>
+      </div>
 
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control shadow-none"
-            id="floatingInput"
-            placeholder="Seu usuário"
-          />
-          <label for="floatingInput">Data de nascimento: </label>
-        </div>
+      <div class="form-floating">
+        <input type="text" class="form-control shadow-none" id="floatingInput" placeholder="Seu usuário" />
+        <label for="floatingInput">Data de nascimento: </label>
+      </div>
 
-        <div class="alert alert-danger d-none" role="alert">
-          Ops! Preencha o campo XXXX!
-        </div>
+      <div class="alert alert-danger d-none" role="alert">
+        Ops! Preencha o campo XXXX!
+      </div>
 
-        <!-- Div com os botões de esquceu senha e para se cadastrar caso não esteja cadastrado -->
+      <!-- Div com os botões de esquceu senha e para se cadastrar caso não esteja cadastrado -->
 
-        <button
-          class="w-100 btn btn-lg border-white text-white botao_bg-color mt-4"
-          type="submit"
-          id="entra-conta"
-        >
-          Entrar
-        </button>
-        <p class="mt-2 mb-3 text-muted">&copy; 2NB SI/EC/CC - UNINASSAU</p>
-      </form>
-    </main>
-  </body>
+      <button class="w-100 btn btn-lg border-white text-white botao_bg-color mt-4" type="submit" id="entra-conta">
+        Entrar
+      </button>
+      <p class="mt-2 mb-3 text-muted">&copy; 2NB SI/EC/CC - UNINASSAU</p>
+    </form>
+  </main>
+</body>
+
 </html>
