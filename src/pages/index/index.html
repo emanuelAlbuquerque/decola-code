@@ -10,18 +10,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="../../styles/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../styles/style.css">
-  <title>DECOLA CODE</title>
+  <title>Decola Code</title>
 </head>
 
 <body>
-  <header class="p-2 fixed-top shadow bg-opacity-50 bg-dark">
+  <!--Inicio Navbar-->
+  <header class="p-0 fixed-top shadow bg-opacity-50 bg-dark">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <img src="../../assets/background-index/" alt="">
-        <a class="navbar-brand" href="#"><img src="../../assets/Slide1.png" alt="" width="70" height="70"></a>
+
+        <!-- <a class="navbar-brand" href="#"><img src="../../assets/Slide1.png" alt="" width="70" height="70"></a> -->
 
         <!-- Botão do menu hamburguer -->
         <button class="navbar-toggler form-control-white" type="button" data-bs-toggle="collapse"
@@ -30,51 +33,63 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- ----------------------------------- -->
+        <!--Botões de links navbar-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link text-white" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Sobre nós</a>
+              <a class="nav-link text-white" href="#sobre-nos">Sobre nós</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled text-white" href="#">Cursos</a>
+              <a class="nav-link text-white" href="../../pages/cursos/cursos.html">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled text-white" href="#">Login</a>
+              <a class="nav-link text-white" href="../../pages/login/login.html">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled text-white" href="#">Cadastre-se</a>
+              <a class="nav-link text-white" href="../../pages/cadastro/cadastro.html">Cadastre-se</a>
             </li>
           </ul>
+          <!----------------------------------------->
+
+          <!--Botão de busca-->
           <form class="d-flex">
             <input class="form-control me-2 bg-transparent form-control-white" type="search" placeholder="Buscar..."
               aria-label="Search">
             <button class="btn border-white text-white button_pesquisar" type="submit">Buscar...</button>
           </form>
+          <!----------------->
         </div>
       </div>
     </nav>
+    <!--Fim Navbar-->
   </header>
-
+  <!--Texto Principal no meio da tela-->
   <section id="principal">
-    <h1 class="shadow rounded text-light principal__titulo">DECOLA CODE</h1>
+    <h1 class="principal__titulo"><span>DECOLA</span> <span>CODE</span></h1>
   </section>
-
+  <!----------------------------------->
 
   <section id="cursos mb-5">
     <div class="jumbotron text-center p-5">
       <h1>Nossos Cursos</h1>
       <p>Tranforme o seu aprendizado e venha fazer parte da nossa equipe de alunos!</p>
     </div>
-
+    <!---Inicio dos cards (Cursos)-->
+    <!--Primeiro card-->
     <div class="container">
       <div class="row mb-4">
         <div class="col-sm-4">
           <a href="" class="text-decoration-none text-dark">
-            <div class="card">
+            <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
               <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
+
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
+              </a>
+
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -83,10 +98,17 @@
             </div>
           </a>
         </div>
+
+        <!--Segundo card-->
         <div class="col-sm-4">
-          <a href="" class="text-decoration-none text-dark text-dark">
-            <div class="card">
+          <a href="" class="text-decoration-none text-dark">
+            <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
               <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
+
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
+              </a>
+
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -95,10 +117,17 @@
             </div>
           </a>
         </div>
+
+        <!--Terceiro card-->
         <div class="col-sm-4">
-          <a href="" class="text-decoration-none text-dark text-dark">
-            <div class="card">
+          <a href="" class="text-decoration-none text-dark">
+            <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
               <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
+
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
+              </a>
+
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -109,24 +138,36 @@
         </div>
       </div>
 
+      <!--Card quatro-->
       <div class="row">
         <div class="col-sm-4">
           <a href="" class="text-decoration-none text-dark">
-            <div class="card">
+            <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
               <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
+
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
+              </a>
+
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
               </div>
           </a>
-
         </div>
       </div>
+
+      <!--Quinto Card-->
       <div class="col-sm-4">
         <a href="" class="text-decoration-none text-dark">
-          <div class="card">
+          <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
             <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
+
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
+            </a>
+
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -135,10 +176,17 @@
           </div>
         </a>
       </div>
+
+      <!--Sexto Card-->
       <div class="col-sm-4">
-        <a href="#" class="text-decoration-none text-dark">
-          <div class="card">
+        <a href="" class="text-decoration-none text-dark">
+          <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
             <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
+
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
+            </a>
+
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -150,10 +198,10 @@
     </div>
     </div>
   </section>
-
+  <!--Fim dos card album (Cursos)-->
 
   <section id="sobre-nos">
-    <!-- Container do carrissel ---- INICIO -->
+    <!-- Container do carousel ---- INICIO -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -162,8 +210,8 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
 
-      <!-- Container das imagens do carrosel -->
-      <!-- A classe active é a clsse que ativa os imagens -->
+      <!-- Container das imagens do carousel -->
+      <!-- A classe active é a clsse que inicia a imagem -->
       <div class="carousel-inner">
         <!-- Primeira Imagem -->
         <div class="carousel-item active">
@@ -175,7 +223,6 @@
             <div class="carousel-caption text-start">
               <h1>Example headline.</h1>
               <p>Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
             </div>
           </div>
         </div>
@@ -190,7 +237,6 @@
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
               <p>Some representative placeholder content for the second slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -205,28 +251,30 @@
             <div class="carousel-caption text-end">
               <h1>One more for good measure.</h1>
               <p>Some representative placeholder content for the third slide of this carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
             </div>
           </div>
         </div>
       </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <!--Controles-->
+      <button class="carousel-control-prev shadow-5" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="fas fa-angle-left fa-2x" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="carousel-control-next shadow-5" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="fas fa-angle-right fa-2x" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- Container do carrissel ---- FIM -->
+    <!-- Container do carousel ---- FIM -->
+
 
     <!-- Marketing messaging and featurettes
             ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <!--Inicio das fotos sobre-nos -->
+    <div id="sobre-nos" class="container marketing">
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
@@ -239,7 +287,6 @@
           <h2 class="fw-normal">Heading</h2>
           <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
             column.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +298,6 @@
           <h2 class="fw-normal">Heading</h2>
           <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
           </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +308,43 @@
 
           <h2 class="fw-normal">Heading</h2>
           <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+      <div class="row">
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg>
+
+          <h2 class="fw-normal">Heading</h2>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
+            column.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg>
+
+          <h2 class="fw-normal">Heading</h2>
+          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
+          </p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg>
+
+          <h2 class="fw-normal">Heading</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -280,7 +362,6 @@
           <h2 class="fw-normal">Heading</h2>
           <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
             column.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
@@ -292,7 +373,6 @@
           <h2 class="fw-normal">Heading</h2>
           <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
           </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
@@ -303,48 +383,6 @@
 
           <h2 class="fw-normal">Heading</h2>
           <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-            column.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2 class="fw-normal">Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2 class="fw-normal">Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -389,6 +427,9 @@
     <!-- Grid container -->
   </footer>
   <script src=" ../../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
 </body>
 
 </html>
