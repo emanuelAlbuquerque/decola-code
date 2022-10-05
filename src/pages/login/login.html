@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DECOLA CODE - login</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/" />
   <link href="../../styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../../styles/style.css" />
+
+  <title>Decola Code - login</title>
 </head>
 
 <body class="body_login-cadastro background_body p-0">
@@ -16,14 +19,13 @@
     <div class="container p-0">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <img src="../../assets/logo_tela-login.jpg" alt="" width="50" height="50" class="rounded-circle" />
+          <img src="../../../src/assets/logo_tela-login.jpg" alt="" width="50" height="50" class="rounded-circle" />
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Sobre nós</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Cursos</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Login</a></li>
+          <li><a href="../../../src/pages/index/index.html" class="nav-link px-2 text-white">Inicio</a></li>
+          <li><a href="#" class="nav-link px-2 text-secondary">Login</a></li>
+          <li><a href="../../../src/pages/cadastro/cadastro.html" class="nav-link px-2 text-white">Cadastre-se</a></li>
         </ul>
 
         <div class="d-flex col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 justify-content-center">
@@ -43,7 +45,7 @@
   </header>
 
   <main class="form-signin w-100 m-auto color-font shadow rounded mt-5">
-    <img class="mb-4 rounded-circle" src="../../assets/logo_tela-login.jpg"
+    <img class="mb-4 rounded-circle" src="../../../src/assets/logo_tela-login.jpg"
       alt=" Desenho de um atronauta usando um computador" width="70" height="70" />
     <!-- ------------------------ENTRAR NA CONTA--------------------------------------------------- -->
     <!-- Tela principal para entrar na conta, colocando seu usuário e sua senha -->
@@ -68,13 +70,15 @@
         <button class="bg-transparent border-0 p-0 links" id="esqueceu-senha" type="button">
           Esqueceu a senha?
         </button>
-        <a href="#" class="links">Cadastre-se!</a>
+        <a href="../../../src/pages/cadastro/cadastro.html" class="links">Cadastre-se!</a>
       </div>
 
-      <button class="w-100 btn btn-lg border-white text-white botao_bg-color" type="submit" id="entra-conta">
+      <a href="../../../src/pages/perfil/perfil.html" class="w-100 btn btn-lg border-white text-white botao_bg-color"
+        type="submit" id="entra-conta">
         Entrar
-      </button>
-      <p class="mt-2 mb-3 text-muted">&copy; 2NB SI/EC/CC - UNINASSAU</p>
+      </a>
+
+      <p class="mt-2 mb-3 text-white">&copy; 2NB SI/EC/CC - UNINASSAU</p>
     </form>
     <!-- ------------------------ENTRAR NA CONTA----------------------------------------------- -->
 
@@ -90,7 +94,7 @@
       <!-- Tranformar em div, pra quando aperar no botão de enviar aplicar um display none na div, e um display block na div de mudar senha -->
       <div class="form-floating">
         <input type="text" class="form-control shadow-none" id="floatingInput" placeholder="Seu usuário" />
-        <label for="floatingInput">Usuario: </label>
+        <label for="floatingInput">Seu e-mail: </label>
       </div>
 
       <button class="bg-transparent mt-3 border-0 p-0 links" id="volta-login" type="button">
@@ -128,9 +132,10 @@
         Voltar
       </button>
 
-      <button class="w-100 mt-4 btn btn-lg border-white text-white botao_bg-color" type="submit">
+      <a href="../../../src/pages/login/login.html" class="w-100 mt-4 btn btn-lg border-white text-white botao_bg-color"
+        type="submit">
         Alterar senha
-      </button>
+      </a>
     </form>
   </main>
 
