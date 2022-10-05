@@ -5,91 +5,99 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
-
   <link rel="stylesheet" href="../../styles/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../styles/style.css">
+
   <title>Decola Code</title>
 </head>
 
 <body>
+
   <!--Inicio Navbar-->
   <header class="p-0 fixed-top shadow bg-opacity-50 bg-dark">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <img src="../../assets/background-index/" alt="">
-
-        <!-- <a class="navbar-brand" href="#"><img src="../../assets/Slide1.png" alt="" width="70" height="70"></a> -->
+        <!--Imagem da navbar-->
+        <a class="navbar-brand" href="#"><img src="../../../src/assets/logoIndex.jpg" alt=""
+            class="rounded-circle navbar-image"></a>
 
         <!-- Botão do menu hamburguer -->
         <button class="navbar-toggler form-control-white" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars text-light shadow-1-soft"></i>
         </button>
         <!-- ----------------------------------- -->
+
         <!--Botões de links navbar-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link text-secondary" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../../../src/pages/login/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../../../src/pages/cadastro/cadastro.html">Cadastre-se</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#sobre-nos">Sobre nós</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../../pages/cursos/cursos.html">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../../pages/login/login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../../pages/cadastro/cadastro.html">Cadastre-se</a>
-            </li>
           </ul>
           <!----------------------------------------->
 
-          <!--Botão de busca-->
+          <!-- INICIO Botão de busca -->
           <form class="d-flex">
-            <input class="form-control me-2 bg-transparent form-control-white" type="search" placeholder="Buscar..."
-              aria-label="Search">
+            <input class="form-control me-2 bg-transparent form-control-white text-white" type="search"
+              placeholder="Buscar..." aria-label="Search">
             <button class="btn border-white text-white button_pesquisar" type="submit">Buscar...</button>
           </form>
-          <!----------------->
+          <!---- FIM botão de busca ------>
         </div>
       </div>
     </nav>
-    <!--Fim Navbar-->
   </header>
+  <!--Fim Navbar-->
+
   <!--Texto Principal no meio da tela-->
   <section id="principal">
     <h1 class="principal__titulo"><span>DECOLA</span> <span>CODE</span></h1>
   </section>
   <!----------------------------------->
 
+  <!-- Seção dos cursos -->
   <section id="cursos mb-5">
     <div class="jumbotron text-center p-5">
       <h1>Nossos Cursos</h1>
       <p>Tranforme o seu aprendizado e venha fazer parte da nossa equipe de alunos!</p>
     </div>
+
     <!---Inicio dos cards (Cursos)-->
-    <!--Primeiro card-->
+
     <div class="container">
+      <!-- Primeira linha de cursos -->
       <div class="row mb-4">
-        <div class="col-sm-4">
+        <!--Primeiro card-->
+        <div class="col-sm-4 card-item">
           <a href="" class="text-decoration-none text-dark">
-            <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
+            <div class="card rounded-9 bg-image hover-overlay hover-zoom hover-shadow ripple">
               <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
 
+              <!-- Link para mostrar mais informações sobre o curso clicado -->
+              <!-- ** Falta implementar ** -->
               <a href="#!">
                 <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
               </a>
 
+              <!-- Texto do card -->
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -98,17 +106,21 @@
             </div>
           </a>
         </div>
+        <!--Fim card 1-->
 
         <!--Segundo card-->
-        <div class="col-sm-4">
+        <div class="col-sm-4 card-item">
           <a href="" class="text-decoration-none text-dark">
-            <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
+            <div class="card rounded-9 bg-image hover-overlay hover-zoom hover-shadow ripple">
               <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
 
+              <!-- Link para mostrar mais informações sobre o curso clicado -->
+              <!-- ** Falta implementar ** -->
               <a href="#!">
                 <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
               </a>
 
+              <!-- Texto do card -->
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -117,17 +129,21 @@
             </div>
           </a>
         </div>
+        <!--Fim card 2-->
 
         <!--Terceiro card-->
-        <div class="col-sm-4">
+        <div class="col-sm-4 card-item">
           <a href="" class="text-decoration-none text-dark">
-            <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
+            <div class="card rounded-9 bg-image hover-overlay hover-zoom hover-shadow ripple">
               <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
 
+              <!-- Link para mostrar mais informações sobre o curso clicado -->
+              <!-- ** Falta implementar ** -->
               <a href="#!">
                 <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
               </a>
 
+              <!-- Texto do card -->
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -136,72 +152,89 @@
             </div>
           </a>
         </div>
+        <!--Fim card 3-->
       </div>
+      <!-- Fim da primeira linha -->
 
-      <!--Card quatro-->
+      <!-- Segunda linha de cursos -->
       <div class="row">
-        <div class="col-sm-4">
+        <!--Card quatro-->
+        <div class="col-sm-4 card-item">
           <a href="" class="text-decoration-none text-dark">
-            <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
+            <div class="card rounded-9 bg-image hover-overlay hover-zoom hover-shadow ripple">
               <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
 
+              <!-- Link para mostrar mais informações sobre o curso clicado -->
+              <!-- ** Falta implementar ** -->
               <a href="#!">
                 <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
               </a>
 
+              <!-- Texto do card -->
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
               </div>
+            </div>
           </a>
         </div>
-      </div>
+        <!--Fim card 4-->
 
-      <!--Quinto Card-->
-      <div class="col-sm-4">
-        <a href="" class="text-decoration-none text-dark">
-          <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
-            <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
+        <!--Quinto Card-->
+        <div class="col-sm-4 card-item">
+          <a href="" class="text-decoration-none text-dark">
+            <div class="card rounded-9 bg-image hover-overlay hover-zoom hover-shadow ripple">
+              <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
 
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
-            </a>
+              <!-- Link para mostrar mais informações sobre o curso clicado -->
+              <!-- ** Falta implementar ** -->
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
+              </a>
 
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <!-- Texto do card -->
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
+        <!--Fim card 5-->
 
-      <!--Sexto Card-->
-      <div class="col-sm-4">
-        <a href="" class="text-decoration-none text-dark">
-          <div class="card bg-image hover-overlay hover-zoom hover-shadow ripple">
-            <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
+        <!--Sexto Card-->
+        <div class="col-sm-4 card-item">
+          <a href="" class="text-decoration-none text-dark">
+            <div class="card rounded-9 bg-image hover-overlay hover-zoom hover-shadow ripple">
+              <img src="../../assets/logo_tela-cadastro.jpg" class="card-img-top" alt="...">
 
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
-            </a>
+              <!-- Link para mostrar mais informações sobre o curso clicado -->
+              <!-- ** Falta implementar ** -->
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(57, 192, 237, 0.2)"></div>
+              </a>
 
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <!-- Texto do card -->
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
+        <!--Fim card 6-->
       </div>
+      <!-- Fim da segunda linha -->
     </div>
-    </div>
+    <!--Fim dos card album (Cursos)-->
   </section>
-  <!--Fim dos card album (Cursos)-->
+  <!-- --Fim Texto Seção cursos-- -->
 
-  <section id="sobre-nos">
-    <!-- Container do carousel ---- INICIO -->
+  <section>
+    <!-- Carousel ---- INICIO -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -210,43 +243,52 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
 
-      <!-- Container das imagens do carousel -->
-      <!-- A classe active é a clsse que inicia a imagem -->
+      <!-- A classe active é a clsse que inicia a imagem *** -->
+
+      <!-- Primeira Imagem INICIO -->
       <div class="carousel-inner">
-        <!-- Primeira Imagem -->
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-mdb-interval="5000">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#777" />
           </svg>
+          <!-- Imagem, a tag está SVG ao definir a imagem alterar a tag para IMG e adicionar o src  -->
+
+          <!-- Texto do Carousel -->
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Example headline.</h1>
               <p>Some representative placeholder content for the first slide of the carousel.</p>
             </div>
           </div>
-        </div>
+        </div><!-- Primeira Imagem FIM -->
 
-        <!-- Segunda Imagem -->
-        <div class="carousel-item">
+        <!-- Segunda Imagem INICIO -->
+        <div class="carousel-item" data-mdb-interval="5000">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#777" />
           </svg>
+          <!-- Imagem, a tag está SVG ao definir a imagem alterar a tag para IMG e adicionar o src  -->
+
+          <!-- Texto do Carousel -->
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
               <p>Some representative placeholder content for the second slide of the carousel.</p>
             </div>
           </div>
-        </div>
+        </div><!-- Segunda Imagem FIM -->
 
-        <!-- Terceira Imagem -->
-        <div class="carousel-item">
+        <!-- Terceira Imagem INICIO -->
+        <div class="carousel-item" data-mdb-interval="5000">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#777" />
           </svg>
+          <!-- Imagem, a tag está SVG ao definir a imagem alterar a tag para IMG e adicionar o src  -->
+
+          <!-- Texto do Carousel -->
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>One more for good measure.</h1>
@@ -254,146 +296,143 @@
             </div>
           </div>
         </div>
-      </div>
+      </div><!-- Terceira Imagem FIM -->
 
-      <!--Controles-->
+      <!--Controles do Carousel-->
       <button class="carousel-control-prev shadow-5" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="fas fa-angle-left fa-2x" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
+        <span class="visually-hidden">Anterior</span>
+      </button> <!-- Botão, em forma de seta para voltar a imagem -->
+
+
       <button class="carousel-control-next shadow-5" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
         <span class="fas fa-angle-right fa-2x" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <span class="visually-hidden">Proximo</span>
+      </button> <!-- Botão, em forma de seta para avançar a imagem -->
     </div>
-    <!-- Container do carousel ---- FIM -->
+  </section> <!-- Carousel ---- FIM -->
 
 
-    <!-- Marketing messaging and featurettes
-            ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+  <!--Inicio das fotos sobre-nos -->
 
-    <!--Inicio das fotos sobre-nos -->
-    <div id="sobre-nos" class="container marketing">
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-            column.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2 class="fw-normal">Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2 class="fw-normal">Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-            column.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2 class="fw-normal">Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2 class="fw-normal">Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
+  <!-- Primeira foto -->
+  <section id="sobre-nos">
+    <div class="container marketing">
 
       <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
+        <div class="col-lg-4 bg-image hover-zoom">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="../../../src/assets/participantes/Alexandre.png" role="img" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Alexandre de Almeida</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+          </img>
+          <h2 class="fw-normal">Alexandre de Almeida</h2> <!-- Nome do aluno -->
+        </div><!-- FIM FOTO 1 -->
 
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-            column.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
+        <!-- Segunda foto -->
+        <div class="col-lg-4 bg-image hover-zoom">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="../../../src/assets/participantes/EduardoKenedy.png" role="img" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Eduardo Kennedy</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+          </img>
+          <h2 class="fw-normal">Eduardo Kennedy</h2> <!-- Nome do aluno -->
+        </div><!-- FIM FOTO 2 -->
 
-          <h2 class="fw-normal">Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
+        <!-- Terceira foto -->
+        <div class="col-lg-4 bg-image hover-zoom">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="../../../src/assets/participantes/EduardoPereira.png" role="img" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Eduardo Pereira</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+          </img>
+          <h2 class="fw-normal">Eduardo Pereira</h2> <!-- Nome do aluno -->
+        </div><!-- FIM FOTO 3 -->
+      </div> <!-- /.row -->
 
-          <h2 class="fw-normal">Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+      <!-- Inicio das fotos da segunda linha -->
+
+      <!-- INICIO FOTO 1 DA LINHA 2 -->
+      <div class="row">
+        <div class="col-lg-4 bg-image hover-zoom">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="../../../src/assets/participantes/fabio.png" role="img" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Fábio Luciano</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+          </img>
+          <h2 class="fw-normal">Fábio Luciano</h2> <!-- Nome do aluno -->
+        </div> <!-- FIM FOTO 1 DA LINHA 2 -->
+
+        <!-- INICIO FOTO 2 DA LINHA 2 -->
+        <div class="col-lg-4 bg-image hover-zoom">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="../../../src/assets/participantes/Guilherme.png" role="img" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Guilherme Nery</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+          </img>
+          <h2 class="fw-normal">Guilherme Nery</h2> <!-- Nome do aluno -->
+        </div> <!-- FIM FOTO 2 DA LINHA 2 -->
+
+        <!-- FOTO 3 DA LINHA 2 -->
+        <div class="col-lg-4 bg-image hover-zoom">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="../../../src/assets/participantes/Hugo.png" role="img" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Hugo Nino</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+          </img>
+          <h2 class="fw-normal">Hugo Nino</h2> <!-- Nome do aluno -->
+        </div> <!-- FIM FOTO 3 DA LINHA 2 -->
+
+      </div> <!-- /.row -->
+
+      <!-- Inicio das fotos da terceira linha -->
+
+      <!-- INICIO FOTO 1 DA LINHA 3 -->
+      <div class="row">
+        <div class="col-lg-4 bg-image hover-zoom">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="../../../src/assets/participantes/Emanuel.png" role="img" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>José Emanuel</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+          </img>
+          <h2 class="fw-normal">José Emanuel</h2> <!-- Nome do aluno -->
+        </div> <!-- FIM FOTO 1 DA LINHA 3 -->
+
+        <!-- INICIO FOTO 2 DA LINHA 3 -->
+        <div class="col-lg-4 bg-image hover-zoom">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="../../../src/assets/participantes/Izabella.png" role="img" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Maria Izabella</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+          </img>
+          <h2 class="fw-normal">Maria Izabella</h2> <!-- Nome da aluna -->
+        </div> <!-- FIM FOTO 2 DA LINHA 3 -->
+
+        <!-- INICIO FOTO 3 DA LINHA 3 -->
+        <div class="col-lg-4 bg-image hover-zoom">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="../../../src/assets/participantes/William.png" role="img" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>William Robson</title>
+          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+          </img>
+          <h2 class="fw-normal">William Robson</h2> <!-- Nome do aluno -->
+        </div> <!-- FIM FOTO 3 DA LINHA 3 -->
+
+      </div> <!-- /.row -->
+    </div> <!-- ./container -->
+  </section> <!-- ./section-->
 
 
-      <!-- START THE FEATURETTES -->
-    </div>
-    <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
-  </section>
-
+  <!-- INICIO Rodapé -->
   <footer class="text-center text-white" style="background-color: #f1f1f1;">
     <!-- Grid container -->
     <div class="container pt-4 pb-2">
@@ -425,11 +464,13 @@
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
-  </footer>
-  <script src=" ../../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </footer> <!-- FIM RODAPÉ -->
 
-  <!-- MDB -->
+  <!-- IMPORTAÇÕES SCRIPTS -->
+  <script src=" ../../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+  <!-- ------------- -->
+
 </body>
 
 </html>
