@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DECOLA CODE - CADASTRO</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/" />
   <link href="../../styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../../styles/style.css" />
+
+  <title>Decola Code - Cadastro</title>
 </head>
 
 <body class="body-cadastro background_body text-center">
+  <!-- INICIO Navbar -->
   <header class="p-3 w-100">
     <div class="container p-0">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
           <img src="../../assets/logo_tela-login.jpg" alt="" width="50" height="50" class="rounded-circle" />
         </a>
-
+        <!-- INICIO Links navbar  -->
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Sobre nós</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Cursos</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Login</a></li>
+          <li><a href="../../../src/pages/index/index.html" class="nav-link px-2 text-white">Inicio</a></li>
+          <li><a href="../../../src/pages/login/login.html" class="nav-link px-2 text-white">Login</a></li>
+          <li><a href="#" class="nav-link px-2 text-secondary">Cadastre-se</a></li>
         </ul>
+        <!-- FIM Links navbar -->
 
+        <!-- INICIO Botão de pesquisa Navbar -->
         <div class="d-flex col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 justify-content-center">
           <form class="me-1" role="search">
             <input type="search" class="form-control bg-transparent text-white form-control-white" aria-label="Search"
@@ -37,18 +42,22 @@
               Pesquisar
             </button>
           </div>
-        </div>
+        </div> <!-- Fim Botão pesquisa Navbar -->
       </div>
     </div>
-  </header>
+  </header> <!-- FIM Navbar -->
 
+  <!-- INICIO Imagem (LOGO) da navbar -->
   <main class="form-signin w-100 m-auto color-font shadow rounded mt-5">
     <img class="mb-4 rounded-circle" src="../../assets/logo_tela-cadastro.jpg"
       alt=" Desenho de um atronauta usando um computador" width="70" height="70" />
+    <!-- FIM Imagem (LOGO) Navbar -->
+
     <!-- ------------------------ENTRAR NA CONTA--------------------------------------------------- -->
     <!-- Tela principal para entrar na conta, colocando seu usuário e sua senha -->
+
     <form action="#" id="login-usuario">
-      <h1 class="h3 mb-3 fw-normal">Cadastre-se!!</h1>
+      <h1 class="h3 mb-3 fw-normal">Criar conta</h1>
 
       <div class="form-floating">
         <input type="text" class="form-control shadow-none" id="floatingInput" placeholder="Seu usuário" />
@@ -81,10 +90,11 @@
 
       <!-- Div com os botões de esquceu senha e para se cadastrar caso não esteja cadastrado -->
 
-      <button class="w-100 btn btn-lg border-white text-white botao_bg-color mt-4" type="submit" id="entra-conta">
-        Entrar
-      </button>
-      <p class="mt-2 mb-3 text-muted">&copy; 2NB SI/EC/CC - UNINASSAU</p>
+      <a href="../../../src/pages/login/login.html" class="w-100 btn btn-lg border-white text-white botao_bg-color mt-4"
+        type="submit" id="entra-conta">
+        Cadastrar
+      </a>
+      <p class="mt-2 mb-3 text-white">&copy; 2NB SI/EC/CC - UNINASSAU</p>
     </form>
   </main>
 </body>
