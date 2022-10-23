@@ -53,16 +53,16 @@
       <h1 class="h3 mb-3 fw-normal">Entrar na conta</h1>
 
       <div class="form-floating">
-        <input type="text" class="form-control shadow-none" id="floatingInput" placeholder="Seu usuário" />
-        <label for="floatingInput">Usuario: </label>
+        <input type="text" name="matricula" class="form-control shadow-none" id="floatingInput usuario" placeholder="Seu usuário" />
+        <label for="floatingInput">Matrícula: </label>
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control shadow-none" id="floatingPassword" placeholder="Password" />
+        <input type="password" name ="senha" class="form-control shadow-none" id="floatingPassword senha" placeholder="Password" />
         <label for="floatingPassword">Senha: </label>
       </div>
 
-      <div class="alert alert-danger d-none" role="alert">
-        Ops! Preencha o campo XXXX!
+      <div class="alert alert-danger" style="display: none;" role="alert" id="alerta-login">
+        
       </div>
 
       <!-- Div com os botões de esquceu senha e para se cadastrar caso não esteja cadastrado -->
@@ -73,10 +73,11 @@
         <a href="../../../src/pages/cadastro/cadastro.html" class="links">Cadastre-se!</a>
       </div>
 
-      <a href="../../../src/pages/perfil/perfil.html" class="w-100 btn btn-lg border-white text-white botao_bg-color"
+      
+      <button class="w-100 btn btn-lg border-white text-white botao_bg-color"
         type="submit" id="entra-conta">
         Entrar
-      </a>
+      </button>
 
       <p class="mt-2 mb-3 text-white">&copy; 2NB SI/EC/CC - UNINASSAU</p>
     </form>
@@ -93,8 +94,12 @@
 
       <!-- Tranformar em div, pra quando aperar no botão de enviar aplicar um display none na div, e um display block na div de mudar senha -->
       <div class="form-floating">
-        <input type="text" class="form-control shadow-none" id="floatingInput" placeholder="Seu usuário" />
+        <input type="email" class="form-control shadow-none" id="floatingInput" placeholder="Seu usuário" required/>
         <label for="floatingInput">Seu e-mail: </label>
+      </div>
+
+      <div class="alert alert-danger" style="display: none;" role="alert" id="alerta-login">
+      
       </div>
 
       <button class="bg-transparent mt-3 border-0 p-0 links" id="volta-login" type="button">

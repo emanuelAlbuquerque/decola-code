@@ -6,6 +6,21 @@
   overflow-y: hidden;
 } */
 
+#body_perfil{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container_table{
+  width: 90%;
+  margin: 0 auto;
+  height: 40%;
+  overflow-y: scroll;
+}
+
 .dropdown-toggle {
   outline: 0;
 }
@@ -50,55 +65,3 @@
   background-color: #d2f4ea;
 }
 
-.scrollarea {
-  overflow-y: auto;
-}
-
-#cursos_andamentos {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.container_cards {
-  display: flex;
-  overflow-x: scroll;
-}
-
-.card_item {
-  width: 100%;
-  max-width: 300px;
-  flex-shrink: 0;
-  margin-right: 10px;
-}
-
-.container_trilhas {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.container_cards-trilhas {
-  width: 100%;
-  display: flex;
-  overflow-x: scroll;
-}
-
-.card_trilha-item {
-  flex-shrink: 0;
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 375px) {
-  .container_cards {
-    overflow-x: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card_item {
-    margin-bottom: 10px;
-  }
-
-  .cursos_titulos {
-    font-size: 1.5rem;
-  }
-}

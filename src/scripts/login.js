@@ -5,8 +5,11 @@ var enviaCodigEmail = document.getElementById('envia_codigo-email') //Pega o bot
 var alteraSenha = document.getElementById('altera-senha') //Pega o form que altera a senha
 var enviaCodigo = document.getElementById('envia-codigo') //Pega o form que envia código
 var voltaLoginAletraSenha = document.getElementById('volta-login-altera_senha') //Pega o botão de voltar do form alteraSenha
+const alertaLogin = document.querySelector('#alerta-login')
 var dNone = 'none'
 var dBlock = 'block'
+
+
 
 function voltarLogin() {
   loginUsuario.style.display = dBlock
@@ -29,3 +32,31 @@ enviaCodigEmail.addEventListener('click', () => {
 voltaLogin.addEventListener('click', voltarLogin) //Quando ele clicar no botão de voltar na tela de envio de código, apaga da tela o formulário de envio de codigo e aparece a tela de login
 
 voltaLoginAletraSenha.addEventListener('click', voltarLogin) //Quando ele clica no botão de voltar na tela de alterar senha, aparece a tela de login
+
+let matricula = loginUsuario.matricula
+let senha = loginUsuario.senha
+
+loginUsuario.addEventListener('submit', (event) => {
+  event.preventDefault()
+
+  let matriculaUsuario = matricula.value
+  let senhaUsuario = senha.value
+
+  if (matriculaUsuario == '01519694' && senhaUsuario == '12345'){
+    window.location.href = '../perfil/perfil.html'
+  }else{
+    alertaLogin.textContent = 'Ops! matricula ou senha incorretos!'
+    alertaLogin.style.display = dBlock
+    matricula.value = ''
+    senha.value = ''
+    matricula.focus()
+  }
+})
+
+matricula.addEventListener('input', () => {
+  alertaLogin.style.display = dNone
+})
+
+senha.addEventListener('input', () => {
+  alertaLogin.style.display = dNone
+})
