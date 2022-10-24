@@ -4,4 +4,6 @@
 @import url(../styles/components/header.css);
 @import url(../styles/abstract/variaveis.css);
 @import url(../pages/index/index.css);
+@import url(../pages/tela-Instrutores/telaInstrutores.css);
+@import url(../pages/telaUsuario/telaUsuario.css);
 @import url(../pages/perfil/perfil.css);

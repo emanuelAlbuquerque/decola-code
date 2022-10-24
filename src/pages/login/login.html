@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/" />
   <link href="../../styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -53,11 +52,12 @@
       <h1 class="h3 mb-3 fw-normal">Entrar na conta</h1>
 
       <div class="form-floating">
-        <input type="text" name="matricula" class="form-control shadow-none" id="floatingInput usuario" placeholder="Seu usuário" />
+        <input type="text" name="matricula" class="form-control shadow-none" id="floatingInput usuario" 
+        placeholder="Sua Matrícula" required/>
         <label for="floatingInput">Matrícula: </label>
       </div>
       <div class="form-floating">
-        <input type="password" name ="senha" class="form-control shadow-none" id="floatingPassword senha" placeholder="Password" />
+        <input type="password" name ="senha" class="form-control shadow-none" id="floatingPassword senha" placeholder="Password" required/>
         <label for="floatingPassword">Senha: </label>
       </div>
 
@@ -94,11 +94,11 @@
 
       <!-- Tranformar em div, pra quando aperar no botão de enviar aplicar um display none na div, e um display block na div de mudar senha -->
       <div class="form-floating">
-        <input type="email" class="form-control shadow-none" id="floatingInput" placeholder="Seu usuário" required/>
+        <input type="email" class="form-control shadow-none" id="floatingInput" name="email" placeholder="Seu E-mail" required/>
         <label for="floatingInput">Seu e-mail: </label>
       </div>
 
-      <div class="alert alert-danger" style="display: none;" role="alert" id="alerta-login">
+      <div class="alert alert-success " style="display: none;" role="alert" id="alerta-codigo">
       
       </div>
 
@@ -106,7 +106,7 @@
         Voltar
       </button>
 
-      <button class="w-100 mt-4 btn btn-lg border-white text-white botao_bg-color" type="button"
+      <button class="w-100 mt-4 btn btn-lg border-white text-white botao_bg-color" type="submit"
         id="envia_codigo-email">
         Enviar
       </button>
@@ -133,14 +133,19 @@
         <label for="floatingInput">Confirme sua senha: </label>
       </div>
 
+      <div class="alert alert-success " style="display: none;" role="alert" id="alerta-senha">
+      
+      </div>
+
+
       <button class="bg-transparent mt-3 border-0 p-0 links" id="volta-login-altera_senha" type="button">
         Voltar
       </button>
 
-      <a href="../../../src/pages/login/login.html" class="w-100 mt-4 btn btn-lg border-white text-white botao_bg-color"
+      <button class="w-100 mt-4 btn btn-lg border-white text-white botao_bg-color"
         type="submit">
         Alterar senha
-      </a>
+      </button>
     </form>
   </main>
 

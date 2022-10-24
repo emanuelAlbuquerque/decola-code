@@ -1,220 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/" />
+  <link href="../../styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles/style.css" />
 
-  <link rel="stylesheet" href="../../styles/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../styles/style.css">
-  <title>Decola Code - Perfil</title>
+  <title>Decola Code - Usuário</title>
 </head>
-
-<body id="body_perfil">
-  <!-- Navbar -->
+<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- Container wrapper -->
       <div class="container-fluid">
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars text-dark"></i>
-        </button>
-  
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Navbar brand -->
-          <a class="navbar-brand mt-2 mt-lg-0" href="#">
-            <img src="../../../src/assets/logoPerfil.jpg" alt="" height="60px" width="60px" class="rounded-circle">
-          </a>
-          <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#nossas_trilhas">Perfil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#nossas_trilhas">Certificado</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#nossas_trilhas">Sair</a>
-            </li>
-          </ul>
-          <!-- Left links -->
-        </div>
-        <!-- Collapsible wrapper -->
-  
-        <!-- Right elements -->
+        <h4>Decola Code</h4>
+
         <div class="d-flex align-items-center">
-          <!-- Icon -->
-          <a class="text-reset me-3" href="#">
-            <i class="fas fa-heart"></i>
-          </a>
-  
-          <!-- Notifications -->
-          <div class="dropdown">
-            <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
-              data-mdb-toggle="dropdown" aria-expanded="false">
-              <i class="fas fa-bell"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a class="dropdown-item" href="#">Novos Cursos</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Novas Trilhas</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Atualizações</a>
-              </li>
-            </ul>
-          </div>
-          
+          <a class="btn btn-primary" href="../tela-Instrutores/telaInstrutores.html">Voltar</a>
         </div>
-        <!-- Right elements -->
       </div>
-      <!-- Container wrapper -->
     </nav>
-    <!-- Navbar -->
   </header>
 
-    <h2 class="align-self-center">Planejamento de aulas</h2>
 
-    <div class="container_table">
-      <table class="table align-middle mb-0 bg-white tabela">
-        <thead class="bg-light">
-          <tr>
-            <th>Instrutor</th>
-            <th>Aula/Curso</th>
-            <th>Horário</th>
-            <th>Localidade</th>
-            <th>Finalizadas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Finalizar
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary align-self-center" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">
-        Cadastre suas aulas!
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-center" id="staticBackdropLabel">Faça o cadastro das suas aulas: </h5>
-              <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <!--INICIO DO FORMULARIO MODAL-->
-      
-              <div class="row">
-                <div class="col">
-                  <!-- Email input -->
-                  <div class="form-outline">
-                    <input type="email" id="form8Example2" class="form-control" />
-                    <label class="form-label" for="form8Example2">Nome: </label>
-                  </div>
-                </div>
-                <div class="col">
-                  <!-- Email input -->
-                  <div class="form-outline">
-                    <input type="email" id="form8Example2" class="form-control" />
-                    <label class="form-label" for="form8Example2">Endereço da aula: </label>
-                  </div>
-                </div>
-              </div>
-      
-              <hr />
-      
-              <div class="row">
-                <div class="col">
-                  <!-- Name input -->
-                  <div class="form-outline mb-4">
-                    <input type="datetime-local" id="date" class="form-control" />
-                    <label class="form-label" for="date"></label>
-                  </div>
-                </div>
-                <div class="col">
-                  <!-- Name input -->
-                  <div class="form-outline mb-4">
-                    <input type="time" id="time" class="form-control"/>
-                    <label class="form-label" for="time"></label>
-                  </div>
-                </div>
-                <div class="col">
-                  <!-- Email input -->
-                  <div class="form-outline">
-                    <input type="email" id="form8Example5" class="form-control" />
-                    <label class="form-label" for="form8Example5">Conteúdo</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col">
-                  <div class="form-outline">
-                    <textarea class="form-control" id="textAreaExample2" rows="5" maxlength="150"></textarea>
-                    <label class="form-label" for="textAreaExample2">Descrição da aula</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--FIM DO FORMULARIO MODAL -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Cadastrar</button>
-            </div>
+  <main class="container mt-4">
+    <div class="row">
+      <div class="col-lg-4 mb-3">
+        <div class="card w-100">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp" class="rounded-circle align-self-center mt-2" alt="Chicago Skyscrapers" width="200" height="200"/>
+          <div class="card-body">
+            <h5 class="card-title">José Emanuel da Silva Souza Albuquerque</h5>
+            <p class="card-text">emanuelalbuquerque16@gmail.com</p>
+            <hr>
+            <p class="card-text"><span class="fw-bold">Matricula: </span>01519694</p>
+            <hr>
+            <p class="card-text-password"><span class="fw-bold">Senha: </span>******</p>
+            <hr>
+            <p class="card-text"><span class="fw-bold">Instituição: </span>Uninassau</p>
+            <hr>
+            <a href="#" class="btn btn-primary">Alterar Dados</a> 
           </div>
         </div>
       </div>
-
-  <footer class="bg-light text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      &copy; 2NB SI/EC/CC - UNINASSAU
+  
+      <div class="col-lg-8">
+        <div class="card w-100">
+          <h1 class="align-self-center mt-4 mb-5">Carga Horária</h1>
+          <div class="card-body">
+            <div class="horas">
+              <span class="fw-bold fs-4">Horas Trabalhadas: </span>
+              <span class="fs-5">2 Horas</span>  
+            </div>
+            <hr>
+            <a href="#" class="btn btn-primary">Baixar Certificado</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Copyright -->
-  </footer>
+  </main>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
-  <script src="../../scripts/sidebars.js"></script>
-  <script src="../../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
 </html>
