@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/" />
   <link href="../../styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../../styles/style.css" />
 
@@ -56,52 +54,93 @@
     <!-- ------------------------ENTRAR NA CONTA--------------------------------------------------- -->
     <!-- Tela principal para entrar na conta, colocando seu usuário e sua senha -->
 
-    <form action="#" id="login-usuario">
+    <form action="#" id="cadastro_usuario">
       <h1 class="h3 mb-3 fw-normal">Criar conta</h1>
 
       <div class="form-floating">
-        <input type="text" class="form-control shadow-none" id="floatingPassword" placeholder="Nome: " required/>
-        <label for="floatingPassword">Nome Completo: </label>
+        <input 
+        type="text" 
+        class="form-control shadow-none" 
+        id="nome" 
+        name="nome" 
+        placeholder="Nome: " 
+        required/>
+        <label for="nome">Nome Completo: </label>
       </div>
 
       <div class="form-floating">
-        <input type="email" class="form-control shadow-none" id="floatingPassword" placeholder="E-mail" required/>
-        <label for="floatingPassword">Seu e-mail: </label>
+        <input 
+          type="email" 
+          class="form-control shadow-none" 
+          id="email" 
+          name="email" 
+          placeholder="E-mail" 
+          required/>
+        <label for="email">Seu e-mail: </label>
       </div>
 
       <div class="form-floating">
-        <input type="text" class="form-control shadow-none" id="floatingPassword" placeholder="Instituiçao" required/>
-        <label for="floatingPassword">Instituição de Ensino:  </label>
+        <input 
+          type="text" 
+          class="form-control shadow-none" 
+          id="instituicao" 
+          name="instituicao"
+          placeholder="Instituiçao" 
+          required/>
+        <label for="instituicao">Instituição de Ensino:  </label>
       </div>
 
       <div class="form-floating">
-        <input type="text" class="form-control shadow-none" id="floatingPassword" placeholder="Matricula" required/>
-        <label for="floatingPassword">Número de Matrícula: </label>
+        <input 
+          type="text" 
+          class="form-control shadow-none" 
+          id="matricula"
+          name="matricula"
+          placeholder="Matricula" 
+          required/>
+        <label for="matricula">Número de Matrícula: </label>
       </div>
 
       <div class="form-floating">
-        <input type="password" class="form-control shadow-none" id="floatingPassword" placeholder="Senha" required/>
-        <label for="floatingPassword">Escolha uma senha: </label>
+        <input 
+          type="password" 
+          class="form-control shadow-none" 
+          id="senha"
+          name="senha"
+          placeholder="Senha" 
+          required/>
+        <label for="senha">Escolha uma senha: </label>
       </div>
 
       <div class="form-floating">
-        <input type="password" class="form-control shadow-none" id="floatingInput" placeholder="Confirme sua Senha" required/>
-        <label for="floatingInput">Confirme sua senha: </label>
+        <input 
+          type="password" 
+          class="form-control shadow-none" id="confirmar_senha" 
+          name="confirmar_senha"
+          placeholder="Confirme sua Senha" 
+          required/>
+        <label for="confirmar_senha">Confirme sua senha: </label>
       </div>
 
-      <div class="alert alert-danger d-none" role="alert">
-        Ops! Preencha o campo XXXX!
+      <div class="alert alert-danger d-none" id="alerta-erro_cadastro" role="alert">
+        
+      </div>
+
+      <div class="alert alert-success d-none" id="alerta_cadastrado" role="alert">
+        Aluno cadastrado
       </div>
 
       <!-- Div com os botões de esquceu senha e para se cadastrar caso não esteja cadastrado -->
 
-      <button href="../../../src/pages/login/login.html" class="w-100 btn btn-lg border-white text-white botao_bg-color mt-4"
-        type="submit" id="entra-conta">
+      <button class="w-100 btn btn-lg border-white text-white botao_bg-color mt-4"
+        type="submit" id="cadastrar_usuario">
         Cadastrar
     </button>
       <p class="mt-2 mb-3 text-white">&copy; 2NB SI/EC/CC - UNINASSAU</p>
     </form>
   </main>
+
+  <script src="./cadastro.js"></script>
 </body>
 
 </html>

@@ -109,30 +109,8 @@
               <button type="button" class="btn btn-sm btn-rounded">
                 Finalizar Aula
               </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
               <button type="button" class="btn btn-sm btn-rounded">
-                Finalizar Aula
+                Atualizar aula
               </button>
             </td>
           </tr>
@@ -159,6 +137,9 @@
               <button type="button" class="btn btn-sm btn-rounded">
                 Finalizar Aula
               </button>
+              <button type="button" class="btn btn-sm btn-rounded">
+                Atualizar aula
+              </button>
             </td>
           </tr>
           <tr>
@@ -181,8 +162,11 @@
             </td>
             <td>Uninassau-Derby</td>
             <td>
-              <button type="button" class="btn btn-sm btn-rounded">
+              <button type="button" class="btn btn-sm btn-rounded" id="finalizar_aula">
                 Finalizar Aula
+              </button>
+              <button type="button" class="btn btn-sm btn-rounded">
+                Atualizar aula
               </button>
             </td>
           </tr>
@@ -209,30 +193,8 @@
               <button type="button" class="btn btn-sm btn-rounded">
                 Finalizar Aula
               </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
               <button type="button" class="btn btn-sm btn-rounded">
-                Finalizar Aula
+                Atualizar aula
               </button>
             </td>
           </tr>
@@ -258,6 +220,65 @@
             <td>
               <button type="button" class="btn btn-sm btn-rounded">
                 Finalizar Aula
+              </button>
+              <button type="button" class="btn btn-sm btn-rounded">
+                Atualizar aula
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                  class="rounded-circle" />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">John Doe</p>
+                  <p class="text-muted mb-0">john.doe@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Lógica de Programação</p>
+              <p class="text-muted mb-0">Aventuras com minecraft</p>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">10/20 - 20:00</p>
+            </td>
+            <td>Uninassau-Derby</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-rounded">
+                Finalizar Aula
+              </button>
+              <button type="button" class="btn btn-sm btn-rounded">
+                Atualizar aula
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                  class="rounded-circle" />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">John Doe</p>
+                  <p class="text-muted mb-0">john.doe@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Lógica de Programação</p>
+              <p class="text-muted mb-0">Aventuras com minecraft</p>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">10/20 - 20:00</p>
+            </td>
+            <td>Uninassau-Derby</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-rounded">
+                Finalizar Aula
+              </button>
+              <button type="button" class="btn btn-sm btn-rounded">
+                Atualizar aula
               </button>
             </td>
           </tr>
@@ -273,32 +294,29 @@
       <div class="modal fade" id="staticBackdrop" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
+          <form class="modal-content" id="formulario-cadastro_aulas">
             <div class="modal-header">
               <h5 class="modal-title text-center" id="staticBackdropLabel">Faça o cadastro das suas aulas: </h5>
               <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <!--INICIO DO FORMULARIO MODAL-->
-      
               <div class="row mb-2">
                 <div class="col">
                   <!-- Email input -->
                   <div class="form-group">
-                    <label class="form-label" for="form8Example2">Nome: </label>
-                    <input type="email" id="form8Example2" class="form-control" placeholder="Digite seu nome completo"/>
+                    <label class="form-label" for="nome">Nome: </label>
+                    <input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo"/>
                   </div>
                 </div>
                 <div class="col">
                   <!-- Email input -->
                   <div class="form-group">
-                    <label class="form-label" for="form8Example5">Tema da aula: </label>
-                    <input type="email" id="form8Example5" class="form-control" placeholder="Tema da aula" />
+                    <label class="form-label" for="tema">Tema da aula: </label>
+                    <input type="text" id="tema" class="form-control" placeholder="Tema da aula" />
                   </div>
                 </div>
               </div>
-      
-           
       
               <div class="row">
                 <div class="col">
@@ -319,7 +337,7 @@
                   <!-- Email input -->
                   <div class="form-group">
                     <label for="" class="form-label">Escolha o local: </label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" id="local" aria-label="Default select example">
                       <option selected value="1">Uninassau - Derby</option>
                     </select>
                   </div>
@@ -330,30 +348,31 @@
                 <div class="col">
                   <div class="form-group">
                     <label class="form-label" for="textAreaExample2">Descrição da aula: </label>
-                    <textarea class="form-control" id="textAreaExample2" rows="5" maxlength="150" placeholder="Informe uma breve descrição do que será visto na aula"></textarea>
+                    <textarea class="form-control" id="descricao" rows="5" maxlength="150" placeholder="Informe uma breve descrição do que será visto na aula"></textarea>
                   </div>
                 </div>
               </div>
             </div>
             <!--FIM DO FORMULARIO MODAL -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Cadastrar</button>
+            <div class="modal-footer w-100 d-flex justify-content-between">
+              <div class="alert alert-success d-none" id="container-informacao_cadastro-aula">
+                Aula cadastrada
+              </div>
+              <button type="submit" class="btn btn-primary" id="cadastrar_aula">Cadastrar</button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
 
   <footer class="bg-light text-center text-lg-start">
-    <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       &copy; 2NB SI/EC/CC - UNINASSAU
     </div>
-    <!-- Copyright -->
   </footer>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
-  <script src="../../scripts/sidebars.js"></script>
   <script src="../../styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./cadastroAulas.js"></script>
 </body>
 
 </html>
