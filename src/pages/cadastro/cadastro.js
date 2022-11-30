@@ -23,10 +23,10 @@ formCadastroAluno.addEventListener('submit', (e) => {
     containerAlertaErroCadastro.innerHTML = "As senhas não coinsidem"
     return
   }
-  cadastrarAluno(nome, email, instituicao, matricula, senha)
+  cadastrarInstrutor(nome, email, instituicao, matricula, senha)
 })
 
-function cadastrarAluno(nome, email, instituicao, matricula, senha) {
+function cadastrarInstrutor(nome, email, instituicao, matricula, senha) {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function () {
     containerAlertaUsuarioCadastrado.style.display = 'block'

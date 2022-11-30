@@ -85,7 +85,8 @@
             <th></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="tbody_aulas">
+          
           <tr>
             <td>
               <div class="d-flex align-items-center">
@@ -106,193 +107,37 @@
             </td>
             <td>Uninassau-Derby</td>
             <td>
-              <button type="button" class="btn btn-sm btn-rounded">
+              <button 
+                type="button" 
+                class="btn btn-sm btn-rounded" 
+                id="finalizar_aula"
+                onclick=" finalizarAula(id)" 
+              >
                 Finalizar Aula
               </button>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Atualizar aula
+              <button 
+                type="button" 
+                class="btn btn-sm btn-rounded" 
+                id="atualizar_aula"
+                onclick="mostrarTelaAlterarAula(id)"
+                >
+                Alterar aula
               </button>
             </td>
           </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Finalizar Aula
-              </button>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Atualizar aula
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
-              <button type="button" class="btn btn-sm btn-rounded" id="finalizar_aula">
-                Finalizar Aula
-              </button>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Atualizar aula
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Finalizar Aula
-              </button>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Atualizar aula
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Finalizar Aula
-              </button>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Atualizar aula
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Finalizar Aula
-              </button>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Atualizar aula
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Finalizar Aula
-              </button>
-              <button type="button" class="btn btn-sm btn-rounded">
-                Atualizar aula
-              </button>
-            </td>
-          </tr>
+          
+          
         </tbody>
       </table>
     </div>
 
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary align-self-center" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">
+      <!--  Modal para cadastrar aulas -->
+      <button type="button" class="btn btn-primary align-self-center" data-mdb-toggle="modal" data-mdb-target="#cadastro-aulas">
         Cadastre suas aulas!
       </button>
       <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal fade" id="cadastro-aulas" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
+        aria-labelledby="cadastro-aulas" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <form class="modal-content" id="formulario-cadastro_aulas">
             <div class="modal-header">
@@ -358,7 +203,90 @@
               <div class="alert alert-success d-none" id="container-informacao_cadastro-aula">
                 Aula cadastrada
               </div>
-              <button type="submit" class="btn btn-primary" id="cadastrar_aula">Cadastrar</button>
+              <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+      
+      <!-- Modal de atualizar aula -->
+      <div class="modal fade" id="atualiza-aula" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
+        aria-labelledby="atualiza-aula" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <form class="modal-content" id="formulario-atualiza_aulas">
+            <input type="hidden" class="form-control" id="idaula" name="idaula">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel">Altere sua aula: </h5>
+              <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!--INICIO DO FORMULARIO MODAL-->
+              <div class="row mb-2">
+                <div class="col">
+                  <!-- Email input -->
+                  <div class="form-group">
+                    <label class="form-label" for="nome">Nome: </label>
+                    <input type="text" id="alterarNome" class="form-control" placeholder="Digite seu nome completo"/>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Email input -->
+                  <div class="form-group">
+                    <label class="form-label" for="tema">Tema da aula: </label>
+                    <input type="text" id="alterarTema" class="form-control" placeholder="Tema da aula" />
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col">
+                  <!-- Name input -->
+                  <div class="form-group mb-4">
+                    <label class="form-label" for="date">Data/Hora: </label>
+                    <input type="datetime-local" id="alterarData" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Name input -->
+                  <div class="form-group mb-4">
+                    <label class="form-label" for="time">Duração: </label>
+                    <input type="time" id="alterarDuracao" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Email input -->
+                  <div class="form-group">
+                    <label for="" class="form-label">Escolha o local: </label>
+                    <select class="form-select" id="alterarLocal" aria-label="Default select example">
+                      <option selected value="1">Uninassau - Derby</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label class="form-label" for="textAreaExample2">Descrição da aula: </label>
+                    <textarea class="form-control" id="alterarDescricao" rows="5" maxlength="150" placeholder="Informe uma breve descrição do que será visto na aula"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--FIM DO FORMULARIO MODAL -->
+            <div class="modal-footer w-100 d-flex justify-content-between">
+              <div class="alert alert-success d-none" id="container-informacao_cadastro-aula">
+                
+              </div>
+              <button 
+                type="submit" 
+                class="btn btn-primary" 
+                id="alterar_aula"
+              >
+                Alterar
+              </button>
             </div>
           </form>
         </div>
