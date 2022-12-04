@@ -6,6 +6,7 @@ const modalAtualizaAula = document.querySelector('#atualiza-aula')
 const containerInformacaoCadastroAula = document.querySelector('#container-informacao_cadastro-aula')
 
 const inputNome = document.querySelector('#nome')
+const inputEmail = document.querySelector('#email')
 const inputTemaAula = document.querySelector('#tema')
 const inputDataEHora = document.querySelector('#date')
 const inputDuracao = document.querySelector('#time')
@@ -14,6 +15,7 @@ const inputDescricao = document.querySelector('#descricao')
 
 const idAula = document.querySelector('#idaula')
 const alterarNome = document.querySelector('#alterarNome')
+const alterarEmail = document.querySelector('#alterarEmail')
 const alterarTema = document.querySelector('#alterarTema')
 const alterarData = document.querySelector('#alterarData')
 const alterarDuracao = document.querySelector('#alterarDuracao')
@@ -27,9 +29,8 @@ const corpoTabelaAulas = document.querySelector('#tbody_aulas')
 formularioCadastroAulas.addEventListener('submit', (e) => {
   e.preventDefault()
   
-  const instrutorLogado = pegaUsuarioLogado();
-  const nome = instrutorLogado.nome
-  const email = instrutorLogado.email
+  const nome = inputNome.value
+  const email = inputEmail.value
   
   const temaAula = inputTemaAula.value
 
@@ -41,14 +42,14 @@ formularioCadastroAulas.addEventListener('submit', (e) => {
   const local = inputLocal.options[inputLocal.selectedIndex].text;
   const descricao = inputDescricao.value
 
-  cadastrarAula(nome,email, temaAula, dataAula, horaAula, duracao, local, descricao)
+  cadastrarAula(nome, email, temaAula, dataAula, horaAula, duracao, local, descricao)
 })
 
 formularioAlterarAulas.addEventListener('submit', alterarAula)
 
 
 
-function cadastrarAula(nome,email, temaAula, dataAula, horaAula, duracao, local, descricao) {
+function cadastrarAula(nome, email, temaAula, dataAula, horaAula, duracao, local, descricao) {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function () {
     containerInformacaoCadastroAula.style.display = 'block'
@@ -87,17 +88,15 @@ function mostrarTelaAlterarAula(id) {
   xhttp.onload = function () {
     const aula = JSON.parse(this.responseText);
     idAula.value = aula.id;
+    alterarNome = aula.nome
+    alterarEmail = aula.email
     alterarTema.value = aula.tema_aula;
     alterarData.value = aula.data_aula.concat(aula.hora_aula).join('T');
     alterarDuracao.value = aula.duracao;
-    alterarLocal.value = aula.alterarLocal;
+    alterarLocal.value = aula.local;
     alterarDescricao.value = aula.descricao;
-    const myModal = new bootstrap.Modal(modalAtualizaAula, {
-      keyboard: false
-    });
-    myModal.show()
   }
-  xhttp.open("GET", "http://localhost:8080/getaula/" + id);
+  xhttp.open("GET", `http://localhost:8080/getaula/${id}`);
   xhttp.setRequestHeader("Content-Type", "application/json");
   xhttp.send();
 }
@@ -105,7 +104,7 @@ function mostrarTelaAlterarAula(id) {
 function alterarAula(e) {
   e.preventDefault()
 
-  const instrutorLogado = pegaUsuarioLogado();
+  // Colocar para pegar o nome e o email
 
   const dataEHora = alterarData.value.split('T')
   const dataAula = dataEHora[0]//Lembrar de quando pegar os valores no bs passar a data para o nosso formato
@@ -119,8 +118,8 @@ function alterarAula(e) {
   xhttp.setRequestHeader("Content-Type", "application/json");
   xhttp.send(JSON.stringify(
     { 
-      "nome": instrutorLogado.nome,
-      "email": instrutorLogado.email,
+      "nome": alterarNome.value,
+      "email": alterarEmail.value,
       "tema_aula": alterarTema.value,
       "data_aula": dataAula,
       "hora_aula": horaAula,
@@ -172,6 +171,8 @@ function listarAulas() {
                 type="button" 
                 class="btn btn-sm btn-rounded" 
                 id="atualizar_aula"
+                data-mdb-target="#atualiza-aula"
+                data-mdb-toggle="modal"
                 onclick="mostrarTelaAlterarAula(${aula.id})"
                 >
                 Alterar aula
@@ -186,15 +187,3 @@ function listarAulas() {
   xhttp.send();
 }
 
-
-function pegaUsuarioLogado(){
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function () {
-    const usuarios = JSON.parse(this.responseText);
-  }
-  xhttp.open("GET", "http://localhost:8080/intrutorlogado");
-  xhttp.setRequestHeader("Content-Type", "application/json");
-  xhttp.send();
-
-  return usuarios
-}

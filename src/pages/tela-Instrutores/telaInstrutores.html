@@ -111,7 +111,7 @@
                 type="button" 
                 class="btn btn-sm btn-rounded" 
                 id="finalizar_aula"
-                onclick=" finalizarAula(id)" 
+                onclick="finalizarAula(2)" 
               >
                 Finalizar Aula
               </button>
@@ -119,7 +119,9 @@
                 type="button" 
                 class="btn btn-sm btn-rounded" 
                 id="atualizar_aula"
-                onclick="mostrarTelaAlterarAula(id)"
+                data-mdb-target="#atualiza-aula"
+                data-mdb-toggle="modal"
+                onclick="mostrarTelaAlterarAula(2)"
                 >
                 Alterar aula
               </button>
@@ -155,10 +157,10 @@
                   </div>
                 </div>
                 <div class="col">
-                  <!-- Email input -->
-                  <div class="form-group">
-                    <label class="form-label" for="tema">Tema da aula: </label>
-                    <input type="text" id="tema" class="form-control" placeholder="Tema da aula" />
+                  <!-- Name input -->
+                  <div class="form-group mb-4">
+                    <label class="form-label" for="time">Email: </label>
+                    <input type="email" id="email" class="form-control" placeholder="Digite seu Email" />
                   </div>
                 </div>
               </div>
@@ -172,12 +174,15 @@
                   </div>
                 </div>
                 <div class="col">
-                  <!-- Name input -->
-                  <div class="form-group mb-4">
-                    <label class="form-label" for="time">Duração: </label>
-                    <input type="time" id="time" class="form-control"/>
+                  <!-- Email input -->
+                  <div class="form-group">
+                    <label class="form-label" for="tema">Tema da aula: </label>
+                    <input type="text" id="tema" class="form-control" placeholder="Tema da aula" />
                   </div>
                 </div>
+              </div>
+              
+              <div class="row">
                 <div class="col">
                   <!-- Email input -->
                   <div class="form-group">
@@ -185,6 +190,13 @@
                     <select class="form-select" id="local" aria-label="Default select example">
                       <option selected value="1">Uninassau - Derby</option>
                     </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Name input -->
+                  <div class="form-group mb-4">
+                    <label class="form-label" for="time">Duração: </label>
+                    <input type="time" id="time" class="form-control" />
                   </div>
                 </div>
               </div>
@@ -228,7 +240,24 @@
                   <!-- Email input -->
                   <div class="form-group">
                     <label class="form-label" for="nome">Nome: </label>
-                    <input type="text" id="alterarNome" class="form-control" placeholder="Digite seu nome completo"/>
+                    <input type="text" id="alterarNome" class="form-control" placeholder="Digite seu nome completo" />
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Name input -->
+                  <div class="form-group mb-4">
+                    <label class="form-label" for="time">Email: </label>
+                    <input type="email" id="alterarEmail" class="form-control" placeholder="Digite seu Email" />
+                  </div>
+                </div>
+              </div>
+            
+              <div class="row">
+                <div class="col">
+                  <!-- Name input -->
+                  <div class="form-group mb-4">
+                    <label class="form-label" for="date">Data/Hora: </label>
+                    <input type="datetime-local" id="alterarData" class="form-control" />
                   </div>
                 </div>
                 <div class="col">
@@ -239,22 +268,8 @@
                   </div>
                 </div>
               </div>
-      
+            
               <div class="row">
-                <div class="col">
-                  <!-- Name input -->
-                  <div class="form-group mb-4">
-                    <label class="form-label" for="date">Data/Hora: </label>
-                    <input type="datetime-local" id="alterarData" class="form-control"/>
-                  </div>
-                </div>
-                <div class="col">
-                  <!-- Name input -->
-                  <div class="form-group mb-4">
-                    <label class="form-label" for="time">Duração: </label>
-                    <input type="time" id="alterarDuracao" class="form-control"/>
-                  </div>
-                </div>
                 <div class="col">
                   <!-- Email input -->
                   <div class="form-group">
@@ -264,13 +279,21 @@
                     </select>
                   </div>
                 </div>
+                <div class="col">
+                  <!-- Name input -->
+                  <div class="form-group mb-4">
+                    <label class="form-label" for="time">Duração: </label>
+                    <input type="time" id="alterarDuracao" class="form-control" />
+                  </div>
+                </div>
               </div>
-
+            
               <div class="row">
                 <div class="col">
                   <div class="form-group">
                     <label class="form-label" for="textAreaExample2">Descrição da aula: </label>
-                    <textarea class="form-control" id="alterarDescricao" rows="5" maxlength="150" placeholder="Informe uma breve descrição do que será visto na aula"></textarea>
+                    <textarea class="form-control" id="alterarDescricao" rows="5" maxlength="150"
+                      placeholder="Informe uma breve descrição do que será visto na aula"></textarea>
                   </div>
                 </div>
               </div>
