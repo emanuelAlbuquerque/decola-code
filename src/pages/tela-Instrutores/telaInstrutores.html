@@ -23,11 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <!-- Container wrapper -->
       <div class="container-fluid">
-       
-        
         <h4>Decola Code</h4>
-  
-        
         <div class="d-flex align-items-center">
           <div class="dropdown">
             <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
@@ -86,47 +82,6 @@
           </tr>
         </thead>
         <tbody id="tbody_aulas">
-          
-          <tr>
-            <td>
-              <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                  class="rounded-circle" />
-                <div class="ms-3">
-                  <p class="fw-bold mb-1">John Doe</p>
-                  <p class="text-muted mb-0">john.doe@gmail.com</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">Lógica de Programação</p>
-              <p class="text-muted mb-0">Aventuras com minecraft</p>
-            </td>
-            <td>
-              <p class="fw-normal mb-1">10/20 - 20:00</p>
-            </td>
-            <td>Uninassau-Derby</td>
-            <td>
-              <button 
-                type="button" 
-                class="btn btn-sm btn-rounded" 
-                id="finalizar_aula"
-                onclick="finalizarAula(2)" 
-              >
-                Finalizar Aula
-              </button>
-              <button 
-                type="button" 
-                class="btn btn-sm btn-rounded" 
-                id="atualizar_aula"
-                data-mdb-target="#atualiza-aula"
-                data-mdb-toggle="modal"
-                onclick="mostrarTelaAlterarAula(2)"
-                >
-                Alterar aula
-              </button>
-            </td>
-          </tr>
           
           
         </tbody>
@@ -196,7 +151,7 @@
                   <!-- Name input -->
                   <div class="form-group mb-4">
                     <label class="form-label" for="time">Duração: </label>
-                    <input type="time" id="time" class="form-control" />
+                    <input type="text" id="time" class="form-control" placeholder="00:00"/>
                   </div>
                 </div>
               </div>
@@ -212,10 +167,10 @@
             </div>
             <!--FIM DO FORMULARIO MODAL -->
             <div class="modal-footer w-100 d-flex justify-content-between">
-              <div class="alert alert-success d-none" id="container-informacao_cadastro-aula">
-                Aula cadastrada
-              </div>
               <button type="submit" class="btn btn-primary">Cadastrar</button>
+              <div class="alert alert-success" id="container-informacao_cadastro-aula" style="display: none;">
+                
+              </div>
             </div>
           </form>
         </div>
@@ -239,14 +194,14 @@
                 <div class="col">
                   <!-- Email input -->
                   <div class="form-group">
-                    <label class="form-label" for="nome">Nome: </label>
+                    <label class="form-label" for="alterarNome">Nome: </label>
                     <input type="text" id="alterarNome" class="form-control" placeholder="Digite seu nome completo" />
                   </div>
                 </div>
                 <div class="col">
                   <!-- Name input -->
                   <div class="form-group mb-4">
-                    <label class="form-label" for="time">Email: </label>
+                    <label class="form-label" for="alterarEmail">Email: </label>
                     <input type="email" id="alterarEmail" class="form-control" placeholder="Digite seu Email" />
                   </div>
                 </div>
@@ -256,14 +211,14 @@
                 <div class="col">
                   <!-- Name input -->
                   <div class="form-group mb-4">
-                    <label class="form-label" for="date">Data/Hora: </label>
+                    <label class="form-label" for="alterarData">Data/Hora: </label>
                     <input type="datetime-local" id="alterarData" class="form-control" />
                   </div>
                 </div>
                 <div class="col">
                   <!-- Email input -->
                   <div class="form-group">
-                    <label class="form-label" for="tema">Tema da aula: </label>
+                    <label class="form-label" for="alterarTema">Tema da aula: </label>
                     <input type="text" id="alterarTema" class="form-control" placeholder="Tema da aula" />
                   </div>
                 </div>
@@ -282,8 +237,8 @@
                 <div class="col">
                   <!-- Name input -->
                   <div class="form-group mb-4">
-                    <label class="form-label" for="time">Duração: </label>
-                    <input type="time" id="alterarDuracao" class="form-control" />
+                    <label class="form-label" for="alterarDuracao">Duração: </label>
+                    <input type="text" id="alterarDuracao" class="form-control" placeholder="00:00"/>
                   </div>
                 </div>
               </div>
@@ -291,7 +246,7 @@
               <div class="row">
                 <div class="col">
                   <div class="form-group">
-                    <label class="form-label" for="textAreaExample2">Descrição da aula: </label>
+                    <label class="form-label" for="alterarDescricao">Descrição da aula: </label>
                     <textarea class="form-control" id="alterarDescricao" rows="5" maxlength="150"
                       placeholder="Informe uma breve descrição do que será visto na aula"></textarea>
                   </div>
@@ -310,6 +265,9 @@
               >
                 Alterar
               </button>
+              <div class="alert alert-success" id="container-informacao_alterar-aula" style="display: none;">
+                
+              </div>
             </div>
           </form>
         </div>
