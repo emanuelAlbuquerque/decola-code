@@ -30,6 +30,7 @@ function cadastrarInstrutor(nome, email, instituicao, matricula, senha) {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function () {
     containerAlertaUsuarioCadastrado.style.display = 'block'
+    window.location.href = '../tela-Instrutores/telaInstrutores.html'
   }
   xhttp.open("POST", "http://localhost:8080/novoinstrutor");
   xhttp.setRequestHeader("Content-Type", "application/json");

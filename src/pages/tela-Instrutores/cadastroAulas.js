@@ -75,14 +75,16 @@ function cadastrarAula(nome, email, temaAula, dataAula, horaAula, duracao, local
 
 
 function finalizarAula(id) {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function () {
-    containerInformacaoCadastroAula.innerHTML = "Aula removida";
-    atualizaTela()
+  const confirma = confirm('Você deseja realmente finalizar essa aula?')
+  if(confirma){
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      atualizaTela()
+    }
+    xhttp.open("DELETE", "http://localhost:8080/finalizaraula/" + id);
+    xhttp.setRequestHeader("Content-Type", "application/json");
+    xhttp.send();
   }
-  xhttp.open("DELETE", "http://localhost:8080/finalizaraula/" + id);
-  xhttp.setRequestHeader("Content-Type", "application/json");
-  xhttp.send();
 }
 
 function mostrarTelaAlterarAula(id) {
@@ -199,5 +201,6 @@ const atualizaTela = () => {
 
   listarAulas()
 }
+
 
 listarAulas()
